@@ -1,0 +1,241 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Helvetica,Arial, sans-serif;
+    overflow-x: hidden;
+}
+*::selection{
+    background-color: pink;
+    color: black;
+}
+#header{
+    --height: 46px;
+    background-color: #000;
+    height: var(--height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+#navigation li{
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+}
+#navigation li:hover a {
+    color: #000;
+}
+#navigation li:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+#navigation li:hover .subnav{
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+#navigation li:hover .subnav li{
+    display: block;
+}
+#navigation .subnav a{
+    text-transform: none;
+    line-height: 38.5px;
+}
+#navigation li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: var(--height);
+    text-transform: uppercase;
+}
+#navigation .subnav{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: none;
+}
+#navigation{
+    display: inline-block;
+}
+#header .search{
+    color: #fff;
+    float: right;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+}
+#header .search:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+#slider{
+    padding-top: 50%;
+   background-image: url(../images/ny.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+    position: relative;
+    margin-top: 45px;
+}
+#slider #text-content{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 48px;
+    color: white;
+    text-align: center;
+}
+#slider #text-heading{
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 24px;
+}
+#slider #text-description{
+    font-size: 15px;
+    margin: 15px 0;
+    font-weight: 700;
+}
+.about-heading{
+    text-align: center;
+    margin: 10px 0;
+    letter-spacing: 4px;
+    line-height: 45px;
+    font-weight: 400;
+    font-size: 30px;
+}
+#about{
+    width: 800px;
+    margin: 64px auto;
+}
+#about #about-content{
+    font-size: 15px;
+    line-height: 150%;
+    text-align: justify;
+    margin: 15px 0;
+    font-weight: 300;
+}
+.slogans{
+    text-align: center;
+    margin: 10px 0;
+    opacity: 0.6;
+}
+#about-images{
+    display: flex;
+    padding: 32px 0;
+}
+#about-images img{
+    width: 60%;
+    border-radius: 3px;
+}
+#about-images .text-image-heading{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+#about-images .text-image-heading .text-about{
+    text-align: center;
+    margin: 15px 0;
+    font-weight: 50;
+}
+#tour{
+    background-color: #000;
+    color: white;
+    width: 100vw;
+    margin-top: 60px;
+    padding: 30px 0;
+}
+.ticket-list{
+    background-color: #fff;
+    color: black;
+    margin-top: 40px;
+    width: 768px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ticket-list .time{
+    font-size: 15px;
+    padding: 11px 16px;
+    color: #757575;
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+}
+.ticket-list .sold-out{
+    background-color: #f44336;
+    color: white;
+    margin-left: 16px;
+    padding: 3px 4px;
+}
+.ticket-list .ticket-quantity{
+    float: right;
+    background-color: #000;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 16px;
+    transform: translateY(-3px);
+}
+.ticket{
+    display: flex;
+    padding: 32px 8px;
+    list-style: none;
+    justify-content: center;
+}
+.ticket .ticket-element{
+    margin: 0 8px;
+    margin-bottom: 16px;
+    max-width: 245px;
+    background-color: #fff;
+    color: #000;
+}
+.ticket .address{
+    margin: 15px 0;
+    font-weight: bolder;
+}
+.ticket .shelf-life{
+    margin: 15px 0;
+    font-size: 15px;
+    color: #757575;
+}
+.ticket .ticket-description{
+    font-size: 15px;
+    margin: 15px 0;
+    font-weight: 100;
+}
+.ticket .ticket-image{
+    width: 245px;
+}
+.ticket .background-images{
+    width: 245px;
+    height: 183.75px;
+    background-color: #000;
+}
+.ticket .ticket-image:hover{
+    opacity: 0.6;
+}
+.ticket .ticket-content{
+    padding: 0.15px 16px;
+}
+.ticket .buy-ticket{
+    background-color: #000;
+    color: #fff;
+    margin: 15px 0;
+    padding: 8px 16px;
+    font-size: 15px;
+    display: block;
+    width: 110px;
+    font-weight: 300;
+}
+.ticket .buy-ticket:hover{
+    cursor: pointer;
+    background-color: #cccc;
+    color: #000;
+}
