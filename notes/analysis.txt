@@ -1,0 +1,24 @@
+1. Analysis (Phân tích) -> OK
+	1. Header (đầu trang)
+		1. Navigation
+	2. Content
+		1. About (Giới thiệu)
+		2. slogans( Khẩu hiệu)
+		3. Tour
+		4. Contact (Liên hệ)
+		5. Images
+	3. Footer
+2. Build base -> OK
+3. Build web
+	1. Header (đầu trang)
+		1. Navigation -> OK
+		2. search -> OK
+	2. Content
+		1. slider -> OK
+		2. About (Giới thiệu) -> OK
+		3. slogans( Khẩu hiệu) -> OK
+		4. Tour -> Is building
+		5. Contact (Liên hệ)
+		6. Images
+	3. Footer
+4. review

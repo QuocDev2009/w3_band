@@ -236,6 +236,6 @@ html{
 }
 .ticket .buy-ticket:hover{
     cursor: pointer;
-    background-color: #cccc;
+    background-color: #ccc;
     color: #000;
 }
