@@ -239,3 +239,100 @@ html{
     background-color: #ccc;
     color: #000;
 }
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal .modal-container{
+    background-color: #fff;
+    position: relative;
+    width: 900px;
+    min-height: 200px;
+}
+.modal .modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    color: #fff;
+}
+.modal .modal-close:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+.modal .modal-header{
+    background-color: rgb(0, 150, 136);
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    letter-spacing: 4px;
+    height: 129px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal .modal-body{
+    padding: 16px;
+}
+.modal .modal-label{
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.modal .modal-input{
+    font-size: 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 24px;
+}
+.modal .modal-pay{
+    color: #fff;
+    background-color: rgb(0, 150, 136);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+.modal .modal-pay:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+.modal .modal-footer{
+    padding: 15px;
+}
+.modal .footer-close{
+    background-color: #f44336;
+    height: 36px;
+    line-height: 36px;
+    width: fit-content;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+.modal .help{
+    text-align: right;
+
+}
+.modal .help a{
+    color: #2196F3;
+}
+.modal .footer-close:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
