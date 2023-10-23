@@ -255,6 +255,7 @@ html{
     position: relative;
     width: 900px;
     min-height: 200px;
+    animation: modalTransition ease .4s;
 }
 .modal .modal-close{
     position: absolute;
@@ -335,4 +336,14 @@ html{
     background-color: #ccc;
     color: #000;
     cursor: pointer;
+}
+@keyframes modalTransition{
+    from{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
