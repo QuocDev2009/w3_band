@@ -401,3 +401,26 @@ html{
 #map{
     margin-top: 100px;
 }
+#footer{
+    padding: 64px 0;
+    text-align: center;
+}
+#footer .social-list a{
+    text-decoration: none;
+    color: #000;
+    opacity: 0.7;
+    font-size: 24px;
+}
+#footer #author{
+    margin: 16px 0;
+    font-size: 15px;
+    color: #000;
+    opacity: 0.7;
+}
+#footer #author a{
+    color: #000;
+    opacity: 0.8;
+}
+#footer .social-list a:hover{
+    opacity: 0.5;
+}
