@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* main */
 html{
     font-family: Helvetica,Arial, sans-serif;
     overflow-x: hidden;
@@ -346,4 +347,51 @@ html{
         opacity: 1;
         transform: translateY(0);
     }
+}
+#contact{
+    margin-top: 64px;
+    padding: 0 94px;
+}
+#contact .contact-content{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 32px 0;
+}
+#contact .contact-info{
+    font-size: 18px;
+}
+#contact .top-input{
+    margin-bottom: 5px;
+}
+#contact .contact-info i{
+    margin-right: 13px;
+}
+#contact .contact-info p{
+    line-height: 1.4;
+    font-size: 18px;
+}
+#contact .top{
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+#contact .bottom-input input{
+    width: 100%;
+    padding: 10px;
+}
+#contact .submit-input{
+    float: right;
+}
+#contact .submit-input input{
+    display: block;
+    margin-top: 15px;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+}
+#contact .submit-input input:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
 }
