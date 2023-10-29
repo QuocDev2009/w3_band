@@ -13,6 +13,9 @@ html{
     background-color: pink;
     color: black;
 }
+.clear{
+    clear: both;
+}
 #header{
     --height: 46px;
     background-color: #000;
@@ -110,7 +113,10 @@ html{
 }
 #about{
     width: 800px;
+    max-width: 100%;
     margin: 64px auto;
+    padding: 0 16px;
+
 }
 #about #about-content{
     font-size: 15px;
@@ -148,13 +154,14 @@ html{
     color: white;
     width: 100vw;
     margin-top: 60px;
-    padding: 30px 0;
+    padding: 30px 15px;
 }
 .ticket-list{
     background-color: #fff;
     color: black;
     margin-top: 40px;
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -186,7 +193,7 @@ html{
 }
 .ticket{
     display: flex;
-    padding: 32px 8px;
+    padding: 32px 0;
     list-style: none;
     justify-content: center;
 }
@@ -215,9 +222,12 @@ html{
     width: 245px;
 }
 .ticket .background-images{
-    width: 245px;
-    height: 183.75px;
+    width: 100%;
+    display: contents;
     background-color: #000;
+}
+.ticket .background-images img{
+    width: 100%;
 }
 .ticket .ticket-image:hover{
     opacity: 0.6;
@@ -348,6 +358,9 @@ html{
         transform: translateY(0);
     }
 }
+#content{
+    width: 100%;
+}
 #contact{
     margin-top: 64px;
     padding: 0 94px;
@@ -423,4 +436,24 @@ html{
 }
 #footer .social-list a:hover{
     opacity: 0.5;
+}
+/* responsive */
+@media (min-width: 1024px){
+
+}
+@media (min-width: 740px) and (max-width: 1023px){
+    #tour .ticket-list{
+        background-color: #000;
+    }
+    #tour .time{
+        background-color: #fff;
+    }
+}
+@media (max-width: 815px){
+    #tour .ticket :first-child{
+        margin-left: 0;
+    }
+    #tour .ticket :last-child{
+        margin-right: 0;
+    }
 }
