@@ -1,0 +1,28 @@
+/* responsive */
+@media (min-width: 1024px){
+
+}
+@media (min-width: 740px) and (max-width: 1023px){
+    #tour .ticket-list{
+        background-color: #000;
+    }
+    #tour .time{
+        background-color: #fff;
+    }
+    #contact{
+        padding: 64px 0 0;
+        display: flex;
+        justify-content: center;
+    }
+    #contact .contact-info {
+        margin-right: 60px;
+    }
+}
+@media (max-width: 815px){
+    #tour .ticket :first-child{
+        margin-left: 0;
+    }
+    #tour .ticket :last-child{
+        margin-right: 0;
+    }
+}

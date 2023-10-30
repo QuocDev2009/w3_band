@@ -12,6 +12,7 @@
     <meta property="og:image" content="./assets/images/troll_face.png">
     <title>W3.Css Template</title>
     <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="icon" href="https://cdn-1.webcatalog.io/catalog/w3schools/w3schools-icon-filled-256.png?v=1675611833243">
 </head>
@@ -19,11 +20,11 @@
     <div id="main">
         <div id="header">
             <ul id="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">Band</a></li>
-                <li><a href="#tour">Tour</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li>
+                <li onclick="load('#')"><a>Home</a></li>
+                <li onclick="load('#about')"><a>Band</a></li>
+                <li onclick="load('#tour')"><a>Tour</a></li>
+                <li onclick="load('#contact')"><a>Contact</a></li>
+                <li onclick="load('#')">
                     <a href="#">
                         More
                         <i class="ti-angle-down"></i>
@@ -163,28 +164,30 @@
                 </ul>
             </div>
             <div id="contact">
-                <div class="about-heading">
-                    CONTACT
-                </div>
-                <div class="slogans">
-                    <i>Fan? Drop a note!</i>
-                </div>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <p><i class="ti-location-pin"></i>Chicago, US</p>
-                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
-                        <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                <div class="center">
+                    <div class="about-heading">
+                        CONTACT
                     </div>
-                    <form action="" class="contact-input">
-                        <div class="top-input">
-                            <input required style="margin-right: 10px;" type="text" class="top" id="" placeholder="Name">
-                            <input required type="email" class="top" id="" placeholder="Email">
+                    <div class="slogans">
+                        <i>Fan? Drop a note!</i>
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <p><i class="ti-location-pin"></i>Chicago, US</p>
+                            <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+                            <p><i class="ti-email"></i>Email: mail@mail.com</p>
                         </div>
-                        <div class="bottom-input"><input required type="text" placeholder="Message" id=""></div>
-                        <div class="submit-input">
-                            <input type="submit" value="SEND">
-                        </div>
-                    </form>
+                        <form action="" class="contact-input">
+                            <div class="top-input">
+                                <input required style="margin-right: 10px;" type="text" class="top" id="" placeholder="Name">
+                                <input required type="email" class="top" id="" placeholder="Email">
+                            </div>
+                            <div class="bottom-input"><input required type="text" placeholder="Message" id=""></div>
+                            <div class="submit-input">
+                                <input type="submit" value="SEND">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div id="map">
@@ -256,5 +259,11 @@
     </div>
     <script src="./assets/script/change_background/main.js"></script>
     <script src="./assets/script/buy_tickets/buy.js"></script>
+    <!-- button navigation -->
+    <script>
+        function load(url){
+            window.location.assign(url)
+        }
+    </script>
 </body> 
 </html>

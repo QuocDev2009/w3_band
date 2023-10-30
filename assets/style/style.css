@@ -8,6 +8,7 @@
 html{
     font-family: Helvetica,Arial, sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 *::selection{
     background-color: pink;
@@ -114,8 +115,8 @@ html{
 #about{
     width: 800px;
     max-width: 100%;
-    margin: 64px auto;
-    padding: 0 16px;
+    margin: 0 auto;
+    padding: 64px 16px;
 
 }
 #about #about-content{
@@ -154,7 +155,7 @@ html{
     color: white;
     width: 100vw;
     margin-top: 60px;
-    padding: 30px 15px;
+    padding: 64px 15px;
 }
 .ticket-list{
     background-color: #fff;
@@ -265,6 +266,7 @@ html{
     background-color: #fff;
     position: relative;
     width: 900px;
+    max-width: calc(100% - 40px);
     min-height: 200px;
     animation: modalTransition ease .4s;
 }
@@ -362,8 +364,7 @@ html{
     width: 100%;
 }
 #contact{
-    margin-top: 64px;
-    padding: 0 94px;
+    padding: 64px 94px 0;
 }
 #contact .contact-content{
     display: flex;
@@ -436,24 +437,4 @@ html{
 }
 #footer .social-list a:hover{
     opacity: 0.5;
-}
-/* responsive */
-@media (min-width: 1024px){
-
-}
-@media (min-width: 740px) and (max-width: 1023px){
-    #tour .ticket-list{
-        background-color: #000;
-    }
-    #tour .time{
-        background-color: #fff;
-    }
-}
-@media (max-width: 815px){
-    #tour .ticket :first-child{
-        margin-left: 0;
-    }
-    #tour .ticket :last-child{
-        margin-right: 0;
-    }
 }
