@@ -266,7 +266,6 @@ html{
     background-color: #fff;
     position: relative;
     width: 900px;
-    max-width: calc(100% - 40px);
     min-height: 200px;
     animation: modalTransition ease .4s;
 }
