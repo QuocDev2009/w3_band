@@ -6,16 +6,24 @@
 }
 /* main */
 html{
-    font-family: Helvetica,Arial, sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    appearance: none;
+    -webkit-appearance: none;
 }
 *::selection{
     background-color: pink;
     color: black;
+    font-family: Helvetica,Arial, sans-serif;
 }
 .clear{
     clear: both;
+}
+.mt-16{
+    margin-top: 16px!important;
+}
+.pt-16{
+    padding-top: 16px!important;
 }
 #header{
     --height: 46px;
@@ -29,11 +37,11 @@ html{
 }
 #navigation li{
     display: inline-block;
-    padding: 0 20px;
     position: relative;
 }
 #navigation li:hover a {
     color: #000;
+    white-space: nowrap;
 }
 #navigation li:hover {
     background-color: #ccc;
@@ -56,6 +64,7 @@ html{
     color: white;
     text-decoration: none;
     font-size: 15px;
+    padding: 0 20px;
     line-height: var(--height);
     text-transform: uppercase;
 }
@@ -66,6 +75,14 @@ html{
 #navigation{
     display: inline-block;
 }
+#header .menu-button{
+    display: none;
+}
+#header .menu-button:hover{
+    background-color: #ccc;
+    color: #000;
+}
+#header .menu-button,
 #header .search{
     color: #fff;
     float: right;
@@ -133,7 +150,6 @@ html{
 }
 #about-images{
     display: flex;
-    padding: 32px 0;
 }
 #about-images img{
     width: 60%;
@@ -261,6 +277,7 @@ html{
     display: none;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 .modal .modal-container{
     background-color: #fff;

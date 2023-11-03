@@ -18,11 +18,84 @@
         margin-right: 60px;
     }
 }
-@media (max-width: 815px){
+@media (max-width: 815px) and (min-width: 740px){
     #tour .ticket :first-child{
         margin-left: 0;
     }
     #tour .ticket :last-child{
         margin-right: 0;
+    }
+}
+/* mobile */
+@media (max-width: 739px){
+    .s-mt-16{
+        margin-top: 16px !important;
+    }
+    #navigation li{
+        display: block;
+    }
+    #header .search{
+        display: none;
+    }
+    #header .menu-button{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #header{
+        overflow: hidden;
+    }
+    #header #navigation{
+        display: block;
+    }
+    #navigation>li:first-child{
+        display: inline-block;
+    }
+    .subnav a{
+        color: #fff;
+    }
+    #navigation li:hover .subnav{
+        background-color: #333;
+        position: initial;
+    }
+    #navigation .subnav li a{
+        color: #fff;
+    }
+    #about-images{
+        display: block;
+    }
+    .ticket{
+        display: block;
+    }
+    .ticket .ticket-element{
+        margin: 0 0 16px;
+        max-width: initial;
+    }
+    .ticket .buy-ticket{
+        text-align: center;
+        width: 100%;
+    }
+    #contact{
+        padding: 0;
+    }
+    #contact .contact-content{
+        display: block;
+        padding: 0 16px;
+    }
+    #contact .top{
+        width: 100%;
+    }
+    #slider #text-content{
+        display: none;
+    }
+    #contact .submit-input input{
+        width: 100%;
+    }
+    #contact .submit-input{
+        width: 100%;
+    }
+    .contact-input input{
+        font-size: 20px;
     }
 }

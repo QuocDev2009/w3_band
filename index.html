@@ -24,7 +24,7 @@
                 <li onclick="load('#about')"><a>Band</a></li>
                 <li onclick="load('#tour')"><a>Tour</a></li>
                 <li onclick="load('#contact')"><a>Contact</a></li>
-                <li onclick="load('#')">
+                <li isParent = 'true'>
                     <a href="#">
                         More
                         <i class="ti-angle-down"></i>
@@ -37,6 +37,7 @@
                 </li>
             </ul>
             <i class="ti-search search"></i>
+            <i id="menu-button" class="ti-menu menu-button"></i>
         </div>
         <div id="slider">
             <div id="text-content">
@@ -72,21 +73,21 @@
                     quis nostrud exercitation ullamco laboris nisi ut aliquip 
                     ex ea commodo consequat.
                 </p>
-                <div id="about-images">
+                <div id="about-images" class="pt-16">
                     <div class="text-image-heading">
-                        <div class="text-about">
+                        <div class="text-about pt-16">
                             Name
                         </div>
                         <img src="./assets/images/bandmember.jpg">
                     </div>
                     <div class="text-image-heading">
-                        <div class="text-about">
+                        <div class="text-about pt-16">
                             Name
                         </div>
                         <img src="./assets/images/bandmember.jpg">
                     </div>
                     <div class="text-image-heading">
-                        <div class="text-about">
+                        <div class="text-about pt-16">
                             Name
                         </div>
                         <img src="./assets/images/bandmember.jpg">
@@ -178,11 +179,11 @@
                             <p><i class="ti-email"></i>Email: mail@mail.com</p>
                         </div>
                         <form action="" class="contact-input">
-                            <div class="top-input">
+                            <div class="top-input s-mt-16">
                                 <input required style="margin-right: 10px;" type="text" class="top" id="" placeholder="Name">
                                 <input required type="email" class="top" id="" placeholder="Email">
                             </div>
-                            <div class="bottom-input"><input required type="text" placeholder="Message" id=""></div>
+                            <div class="bottom-input s-mt-16"><input required type="text" placeholder="Message" id=""></div>
                             <div class="submit-input">
                                 <input type="submit" value="SEND">
                             </div>
@@ -259,6 +260,7 @@
     </div>
     <script src="./assets/script/change_background/main.js"></script>
     <script src="./assets/script/buy_tickets/buy.js"></script>
+    <script src="./assets/script/open/open_menu.js"></script>
     <!-- button navigation -->
     <script>
         function load(url){

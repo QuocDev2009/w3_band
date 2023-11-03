@@ -17,8 +17,8 @@
 		1. slider -> OK
 		2. About (Giới thiệu) -> OK
 		3. slogans( Khẩu hiệu) -> OK
-		4. Tour -> Is building
-		5. Contact (Liên hệ)
-		6. Images
-	3. Footer
+		4. Tour -> OK
+		5. Contact -> OK
+		6. Images -> OK
+	3. Footer -> OK
 4. review
